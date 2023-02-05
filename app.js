@@ -6,7 +6,7 @@ const server = http.createServer(app)
 const socketIO = require("socket.io")
 const moment = require("moment")
 
-const io = socketIO(server);
+const io = socketIO(server).listen(server);
 
 app.use(express.static(path.join(__dirname, "src")))
 
