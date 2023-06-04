@@ -20,10 +20,9 @@ function send(){
     }
     
     socket.emit("chatting", param)
-    chatInput.value = ""
+    chatInput.value = null
 }
-
-sendButton.addEventListener("click", send())
+sendButton.addEventListener("click", send)
 
 
 
