@@ -24,3 +24,6 @@ io.on("connection", (socket)=>{
 })
 
 server.listen(PORT, () => console.log(`server is runing ${PORT}`))
+
+
+/// 서버 코드
